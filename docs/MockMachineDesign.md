@@ -60,14 +60,13 @@ Direction will be used later for knowing what needs to be sent, and what need to
 
 
 DB Table network (json):
-```json
+```js
 {
   time: Date,
   recordId: "string",
-  trigger: CHRONOS / MITHRA,
+  trigger: CHRONOS | MITHRA,
   request: reqObject,
   response: resObject,
-  
 }
 ```
 

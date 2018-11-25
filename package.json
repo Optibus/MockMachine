@@ -1,0 +1,23 @@
+{
+  "name": "mockmachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --inspect=127.0.0.1:9222 index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lior Solomon",
+  "license": "ISC",
+  "dependencies": {
+    "@awaitjs/express": "^0.1.4",
+    "express": "^4.16.4",
+    "mockserver-client": "^5.5.0",
+    "mockserver-node": "^5.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "nodemon": "^1.18.6"
+  }
+}

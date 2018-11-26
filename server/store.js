@@ -24,3 +24,5 @@ const getRecord = async (record) =>
 
 
 module.exports = { saveRecord, getRecord }
+
+fs.readdir('./', (err, res) => res.filter(it => /.*\.log$/.exec(it)).forEach(file => fs.unlink(file, () => {})))

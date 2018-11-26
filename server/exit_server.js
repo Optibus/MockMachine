@@ -26,8 +26,29 @@ process.on('SIGINT', function () {
 // stop MockServer when a kill shell command is used
 process.on('SIGTERM', function () {
     console.log('SIGTERM - stopping node server');
-    jobs.forEach(job => job());
-    process.exit(0);
+    Promise.all(jobs.map(job => job()))
+    .catch((err) => console.log(err))
 });
+
+process.once('SIGUSR2', function () {
+    console.log('SIGUSR2 - stopping node server');
+    Promise.all(jobs.map(job => {
+        let rep = job();
+        if (rep.catch) return rep.catch(err => console.log("##", err));
+        return rep;
+    }))
+    .then(() => process.kill(process.pid, 'SIGUSR2'));
+  });
+
+process.once('SIGSEGV', function () {
+    console.log('SIGSEGV - stopping node server');
+    Promise.all(jobs.map(job => {
+        let rep = job();
+        if (rep.catch) return rep.catch(err => console.log("##", err));
+        return rep;
+    }))
+    .then(() => process.kill(process.pid, 'SIGSEGV'));
+});
+  
 
 module.exports = setOnExitJob;

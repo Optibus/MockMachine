@@ -11,8 +11,8 @@ const successHelper = (foo) => wrap(async (req, res) => {
     try {
         const ans = await foo(req, res);
         res.status(200).send(ans);
-    } catch (err) {
-        res.status(500).send({error: err});
+    } catch ({message, stack}) {
+        res.status(500).json({ error: {message, stack} });
     }
 });
 
@@ -24,8 +24,15 @@ module.exports = {
     }),
     saveCurrentRecording: successHelper(async (req, res) => {
         const record = await mockServer.getCurrentRecording();
-        store.saveRecord(record);
-        return record;
+        const recordName = mockServer.recordName;
+        store.saveRecord({[recordName]: record});
+        return {[recordName]: record};
     }),
     getRecords: successHelper(mockServer.getCurrentRecording.bind(mockServer)),
+    startMocking: successHelper(async (req, res) => {
+        const recordName = mockServer.recordName;
+        const record = await store.getRecord();
+        await mockServer.startMockState(record[mockServer.recordName]);
+    }),
+    getLogs: successHelper(mockServer.getLogs.bind(mockServer)),
 }

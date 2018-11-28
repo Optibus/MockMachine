@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Error</title>
+    <script src="https://cdn.jsdelivr.net/npm/renderjson@1.4.0/renderjson.min.js"></script>
+    <style>
+    .renderjson a              { text-decoration: none; }
+    .renderjson .disclosure    { color: crimson;
+                                font-size: 150%; }
+    .renderjson .syntax        { color: grey; }
+    .renderjson .string        { color: red; }
+    .renderjson .number        { color: cyan; }
+    .renderjson .boolean       { color: plum; }
+    .renderjson .key           { color: lightblue; }
+    .renderjson .keyword       { color: lightgoldenrodyellow; }
+    .renderjson .object.syntax { color: lightseagreen; }
+    .renderjson .array.syntax  { color: lightsalmon; }
+    </style>
+</head>
+<body>
+    <div style="height: 45vh">
+        <div id="waitmsg" style="display: none">waiting....</div>
+        <div id="links">
+            <li>
+                <ul><button type="button" onclick="get('restart')">restart</button></ul>
+                <ul><button type="button" onclick="get('stop')">stop</button></ul>
+                <ul><button type="button" onclick="get('resetRecording/lior',)">resetRecording</button></ul>
+                <ul><button type="button" onclick="get('save')">save</button></ul>
+                <ul><button type="button" onclick="get('getCurrentRecording')">getCurrentRecording</button></ul>
+                <ul><button type="button" onclick="get('startMocking')">startMocking</button></ul>
+                <ul><button type="button" onclick="get('log')">log</button></ul>
+                </ul>
+            </li>
+        </div>
+    </div>
+    
+    <div id="output" style="height: 50vh; overflow: auto; background-color: black">
+        <div></div>
+    </div>
+</body>
+<script>
+    let output = document.getElementById('output');
+    let waitmsg = document.getElementById('waitmsg');
+    let links = document.getElementById('links');
+    renderjson.set_show_to_level(1);
+    function get(path) {
+        waitmsg.style.display = "";
+        links.style.display = "none";
+        fetch(`mock/${path}`)
+        .then(res => {
+            waitmsg.style.display = "none";
+            links.style.display = "";
+            return res.json()
+        })
+        .then(res => 
+        output.firstElementChild.replaceWith(renderjson(res)));
+    }
+    
+</script>
+</html>

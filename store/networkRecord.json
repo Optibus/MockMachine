@@ -1,1 +1,1076 @@
-{"MithraMockRecordedExpectation":[{"httpRequest":{"method":"GET","path":"/sdfsd","headers":{"Host":["localhost:1081"],"User-Agent":["curl/7.54.0"],"Accept":["*/*"],"content-length":["0"]},"keepAlive":true,"secure":false},"httpResponse":{"statusCode":404,"reasonPhrase":"Not Found","headers":{"X-Powered-By":["Express"],"Content-Security-Policy":["default-src 'self'"],"X-Content-Type-Options":["nosniff"],"Content-Type":["text/html; charset=utf-8"],"Content-Length":["241"],"Vary":["Accept-Encoding"],"Date":["Mon, 26 Nov 2018 16:24:52 GMT"],"connection":["keep-alive"]},"body":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: ENOENT: no such file or directory, stat &#39;/Users/lllsss/dev/armada/mithra/public/index.html&#39;<br><br></pre>\n</body>\n</html>\n"},"times":{"remainingTimes":1}}],"EuclidMockRecordedExpectation":[]}
+{
+    "default": {
+        "MithraMockRecordedExpectations": [{
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules",
+                "queryStringParameters": {
+                    "day": ["5"],
+                    "scheduleSet": ["cH3aVRVf_"]
+                },
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/2q2i0Gi8b/gantt"],
+                    "time-stamp": ["1543414465806"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["35"],
+                    "ETag": ["W/\"23-aOY3A+kgy4Ecu5bBbeC5UNWuKLE\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:25 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"schedules\":[{\"_id\":\"QLB7L_pBk\"}]}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules/opHistory",
+                "queryStringParameters": {
+                    "id": ["QLB7L_pBk"]
+                },
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/2q2i0Gi8b/gantt"],
+                    "time-stamp": ["1543414466029"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["14"],
+                    "ETag": ["W/\"e-7l4s/MSnfBShnyIdgOMh9wzJapM\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"history\":[]}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/datasets/Rf3qTeuCi",
+                "headers": {
+                    "if-none-match": ["W/\"10233-dSONfM7wMiWbGKenhMUNOMiPaPk\""],
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/2q2i0Gi8b/gantt"],
+                    "time-stamp": ["1543414466033"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 304,
+                "reasonPhrase": "Not Modified",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "ETag": ["W/\"10233-dSONfM7wMiWbGKenhMUNOMiPaPk\""],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "content-length": ["0"],
+                    "connection": ["close"]
+                }
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules/relevantdays/",
+                "queryStringParameters": {
+                    "id": ["cH3aVRVf_"]
+                },
+                "headers": {
+                    "if-none-match": ["W/\"94-IoftSDzNR7iWEYEkVRpyEXno2us\""],
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/2q2i0Gi8b/gantt"],
+                    "time-stamp": ["1543414466133"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["181"],
+                    "ETag": ["W/\"b5-HVK3hk1JML1kDESRiRSceWNTBDU\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"schedules\":[{\"_id\":2,\"schedule\":\"fMPJqKtUI\"},{\"_id\":3,\"schedule\":\"XPDPvE7SX\"},{\"_id\":1,\"schedule\":\"oVKyqWe6To\"},{\"_id\":4,\"schedule\":\"2q2i0Gi8b\"},{\"_id\":5,\"schedule\":\"QLB7L_pBk\"}]}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/colors",
+                "queryStringParameters": {
+                    "type": ["service"]
+                },
+                "headers": {
+                    "if-none-match": ["W/\"96-CxT2Crn8Ybdzi3AucBkEDVs1AXY\""],
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/2q2i0Gi8b/gantt"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "contenttype": ["application/json; charset=utf-8"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "accept": ["*/*"],
+                    "content-type": ["application/json"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "datatype": ["json"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 304,
+                "reasonPhrase": "Not Modified",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "ETag": ["W/\"96-CxT2Crn8Ybdzi3AucBkEDVs1AXY\""],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "content-length": ["0"],
+                    "connection": ["close"]
+                }
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules/stats/NBTckVelZr",
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/QLB7L_pBk/gantt"],
+                    "time-stamp": ["1543414466533"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["30"],
+                    "ETag": ["W/\"1e-cjlzyYsS/7TIoeGc1pQnmjMT52A\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"stats\":{\"_id\":\"NBTckVelZr\"}}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/warmupCache",
+                "queryStringParameters": {
+                    "mithraModel": ["Schedule"],
+                    "scheduleId": ["QLB7L_pBk"],
+                    "dataset": ["Rf3qTeuCi"]
+                },
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/2q2i0Gi8b/gantt"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "contenttype": ["application/json; charset=utf-8"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "accept": ["*/*"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "datatype": ["json"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "content-length": ["0"],
+                    "connection": ["close"]
+                }
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }],
+        "EuclidMockRecordedExpectations": [{
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["y492QgzskEipcyHn"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8102"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"QLB7L_pBk\",\"day\":5,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":10,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":5,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["y492QgzskEipcyHn"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8102"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"QLB7L_pBk\",\"day\":5,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":10,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":5,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["y492QgzskEipcyHn"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8102"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"QLB7L_pBk\",\"day\":5,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":10,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":5,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["y492QgzskEipcyHn"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8102"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"QLB7L_pBk\",\"day\":5,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":10,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":5,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["y492QgzskEipcyHn"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8102"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"QLB7L_pBk\",\"day\":5,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":10,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":5,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:14:26 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }]
+    },
+    "lior": {
+        "MithraMockRecordedExpectations": [{
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules",
+                "queryStringParameters": {
+                    "day": ["4"],
+                    "scheduleSet": ["cH3aVRVf_"]
+                },
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/fMPJqKtUI/gantt"],
+                    "time-stamp": ["1543413670745"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["35"],
+                    "ETag": ["W/\"23-88qF8v9TnLD+BgR87f84ukAZta0\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:10 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"schedules\":[{\"_id\":\"2q2i0Gi8b\"}]}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules/opHistory",
+                "queryStringParameters": {
+                    "id": ["2q2i0Gi8b"]
+                },
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/fMPJqKtUI/gantt"],
+                    "time-stamp": ["1543413670962"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["14"],
+                    "ETag": ["W/\"e-7l4s/MSnfBShnyIdgOMh9wzJapM\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"history\":[]}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/datasets/Rf3qTeuCi",
+                "headers": {
+                    "if-none-match": ["W/\"10233-dSONfM7wMiWbGKenhMUNOMiPaPk\""],
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/fMPJqKtUI/gantt"],
+                    "time-stamp": ["1543413670965"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 304,
+                "reasonPhrase": "Not Modified",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "ETag": ["W/\"10233-dSONfM7wMiWbGKenhMUNOMiPaPk\""],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "content-length": ["0"],
+                    "connection": ["close"]
+                }
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules/relevantdays/",
+                "queryStringParameters": {
+                    "id": ["cH3aVRVf_"]
+                },
+                "headers": {
+                    "if-none-match": ["W/\"73-3TFUiJxGvtQrZt/3dnMP7rSe844\""],
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/fMPJqKtUI/gantt"],
+                    "time-stamp": ["1543413671077"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["148"],
+                    "ETag": ["W/\"94-IoftSDzNR7iWEYEkVRpyEXno2us\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"schedules\":[{\"_id\":2,\"schedule\":\"fMPJqKtUI\"},{\"_id\":3,\"schedule\":\"XPDPvE7SX\"},{\"_id\":1,\"schedule\":\"oVKyqWe6To\"},{\"_id\":4,\"schedule\":\"2q2i0Gi8b\"}]}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/colors",
+                "queryStringParameters": {
+                    "type": ["service"]
+                },
+                "headers": {
+                    "if-none-match": ["W/\"96-CxT2Crn8Ybdzi3AucBkEDVs1AXY\""],
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/fMPJqKtUI/gantt"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "contenttype": ["application/json; charset=utf-8"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "accept": ["*/*"],
+                    "content-type": ["application/json"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "datatype": ["json"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 304,
+                "reasonPhrase": "Not Modified",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "ETag": ["W/\"96-CxT2Crn8Ybdzi3AucBkEDVs1AXY\""],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "content-length": ["0"],
+                    "connection": ["close"]
+                }
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/schedules/stats/J3QIbvrlPM",
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/2q2i0Gi8b/gantt"],
+                    "time-stamp": ["1543413671573"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "accept": ["application/json, text/javascript, */*; q=0.01"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Content-Type": ["application/json; charset=utf-8"],
+                    "Content-Length": ["30"],
+                    "ETag": ["W/\"1e-jHwPGLDXFAHp1BqwTgiVUy2MhQE\""],
+                    "Vary": ["Accept-Encoding"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "connection": ["close"]
+                },
+                "body": "{\"stats\":{\"_id\":\"J3QIbvrlPM\"}}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "GET",
+                "path": "/app/warmupCache",
+                "queryStringParameters": {
+                    "mithraModel": ["Schedule"],
+                    "scheduleId": ["2q2i0Gi8b"],
+                    "dataset": ["Rf3qTeuCi"]
+                },
+                "headers": {
+                    "cookie": ["mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel=%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D; intercom-session-opi633su=OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24"],
+                    "accept-language": ["en,he;q=0.9,en-US;q=0.8"],
+                    "accept-encoding": ["gzip, deflate, br"],
+                    "referer": ["http://localhost:4200/schedules/fMPJqKtUI/gantt"],
+                    "user-agent": ["Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"],
+                    "contenttype": ["application/json; charset=utf-8"],
+                    "x-requested-with": ["XMLHttpRequest"],
+                    "clientid": ["ember5441543411976722"],
+                    "accept": ["*/*"],
+                    "authorization": ["5bf2b3c8e99ad41a84a5b934"],
+                    "datatype": ["json"],
+                    "dnt": ["1"],
+                    "apiversion": ["104"],
+                    "issharedbschedule": ["true"],
+                    "customer": ["acme"],
+                    "connection": ["close"],
+                    "host": ["localhost:4200"],
+                    "content-length": ["0"]
+                },
+                "cookies": {
+                    "intercom-session-opi633su": "OHNsbkp4b1JXUDlad2dPR0w4WUpMQVV3SXhwam9WTjQ2dFJXNVpPaVdocEp3WHp3YVlmY012YjZzNGJmK0FrVi0tTG04L3VNY3ZldkhaNFZJMXNUc2FqUT09--551e896c36c4bc9cb0152454217225e96b7b8c24",
+                    "mp_5c245de8db3cf3c0b6d4bad6712fedc6_mixpanel": "%7B%22distinct_id%22%3A%20%22liors%40optibus.com%22%2C%22%24device_id%22%3A%20%221672b73382516e-0fd518cc72def-35667407-1fa400-1672b733826961%22%2C%22%24user_id%22%3A%20%22liors%40optibus.com%22%2C%22%24initial_referrer%22%3A%20%22http%3A%2F%2Flocalhost%3A4200%2Fschedules%2FOE6t9T5ZA3%2Fgantt%22%2C%22%24initial_referring_domain%22%3A%20%22localhost%3A4200%22%2C%22Customer%22%3A%20%22acme%22%2C%22User%20type%22%3A%20%22Internal%22%2C%22Gantt%20type%22%3A%20%22vehicles%22%7D"
+                },
+                "keepAlive": false,
+                "secure": false
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "X-Powered-By": ["Express"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "content-length": ["0"],
+                    "connection": ["close"]
+                }
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }],
+        "EuclidMockRecordedExpectations": [{
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["IirCzF6WkSFe4wkf"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8101"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"2q2i0Gi8b\",\"day\":4,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":8,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":4,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["IirCzF6WkSFe4wkf"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8101"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"2q2i0Gi8b\",\"day\":4,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":8,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":4,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["IirCzF6WkSFe4wkf"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8101"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"2q2i0Gi8b\",\"day\":4,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":8,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":4,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["IirCzF6WkSFe4wkf"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8101"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"2q2i0Gi8b\",\"day\":4,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":8,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":4,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:11 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }, {
+            "httpRequest": {
+                "method": "POST",
+                "path": "/cache/touch",
+                "headers": {
+                    "Content-Type": ["application/json"],
+                    "X-Optibus-RequestId": ["IirCzF6WkSFe4wkf"],
+                    "X-Optibus-Customer": ["acme"],
+                    "X-Optibus-User": ["liors@optibus.com"],
+                    "X-Optibus-OperationType": ["warmupCache"],
+                    "host": ["localhost:1082"],
+                    "accept-encoding": ["gzip, deflate"],
+                    "Connection": ["close"],
+                    "content-length": ["8101"]
+                },
+                "keepAlive": false,
+                "secure": false,
+                "body": {
+                    "type": "STRING",
+                    "string": "{\"data_set\":{\"id\":\"Rf3qTeuCi\",\"idle_trip_catalog\":\"sDsEDOoD-N\",\"idle_trip_catalog_last_modified\":\"2018-10-29T07:20:49.772Z\",\"signature\":\"Rf3qTeuCi-Sun Nov 18 2018 11:13:20 GMT+0200 (IST)\"},\"schedule\":{\"_id\":\"2q2i0Gi8b\",\"day\":4,\"scheduleSet\":\"cH3aVRVf_\",\"revision\":8,\"dataset\":\"Rf3qTeuCi\",\"preferences\":[{\"duty_types\":[{\"id\":\"Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"6:00-08:59\"},{\"id\":\"Night\",\"start_time\":\"17:00-23:59\",\"work_time\":\"6:00-10:00\"},{\"id\":\"Full Day\",\"start_time\":\"03:00-11:00\",\"work_time\":\"9:00-13:00\"},{\"id\":\"Split\",\"split_duty\":true,\"start_time\":\"03:00-10:00\",\"work_time\":\"07:00-13:00\"},{\"id\":\"Short Morning\",\"start_time\":\"03:00-10:00\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Short Noon\",\"start_time\":\"11:00-16:59\",\"work_time\":\"03:00-05:59\"},{\"id\":\"Other Split\",\"split_duty\":true},{\"id\":\"Other Short\",\"work_time\":\"00:00-02:59\"}]},{\"duty_type_preference\":{\"penalties\":{\"Full Day\":300,\"Morning\":300,\"Night\":300,\"Noon\":300,\"Other\":600,\"Other Short\":700,\"Other Split\":800,\"Short Morning\":450,\"Short Noon\":500,\"Split\":500}}},{\"driver_work_limitation\":{\"maximum_driver_work_time\":\"12:00\",\"maximum_duty_length\":\"16:00\",\"overlook_signing_for_breaks\":true,\"sliding_window_break\":{\"required_break_length\":\"00:30\",\"window_length\":\"05:00\"}}},{\"request_parameters\":{\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"},\"schedule_parameters\":{\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true}}},{\"idle_trip_generator\":{\"module_name\":\"idletrip_generators.aerial_distance_formula\"}},{\"cost_function_parameters\":{\"default\":{\"driver_daily_fixed_cost\":20,\"hourly_wage\":60,\"vehicle_types\":[{\"daily_fixed_cost\":600,\"distance_unit_cost\":4,\"vehicle_type_id\":\"all\"}]}}},{\"homogenic_vehicle_schedule\":{\"apply_on_depots\":false,\"criterion\":{\"service_trips\":\"work_limitation = data_set.get_preference('driver_work_limitation')\\nif work_limitation is None or not work_limitation.sliding_window_break:\\n return True\\n\\nrequired_break = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].required_break_length\\nwindow_length = int(u'default') if u'default' != 'default' else work_limitation.sliding_window_break[0].window_length\\n\\nsource_depot = getattr(trip, 'allocated_start_depot', None)\\nif source_depot is None:\\n return True\\nsource_depot = source_depot.stop\\n\\nif next_trip.end - trip.start < window_length - required_break or next_trip.start - trip.end - idle_trips.time(trip.destination, next_trip.origin) >= required_break:\\n return True\\nreturn 1 - (min(1,min(stop_group.distance_from_group_to_stop(trip.destination, False) for stop_group in data_set.stop_groups.groups_of_stop(source_depot)) / float(30)))\"},\"name\":\"Adjust trip links to driver work limitations\",\"parameters\":{\"max_distance_from_depot\":{\"default_value\":30,\"display_name\":\"max_distance_from_depot\",\"type\":\"number\"},\"required_break\":{\"default_value\":\"default\",\"display_name\":\"required_break\",\"type\":\"string\"},\"window_length\":{\"default_value\":\"default\",\"display_name\":\"window_length\",\"type\":\"string\"}},\"penalty\":500,\"restrict\":false}},{\"homogenic_vehicle_schedule\":{\"criterion\":\"route.sign\",\"penalty\":10}},{\"schedule_locking\":{\"duty_locks\":{},\"vehicle_locks\":{}}},{\"depot_vehicle_allocation\":{\"name\":\"Vehicle depot circularity - default\",\"parameters\":{\"vehicle_must_finish_at_start_depot\":{\"description\":\"Does a vehicle must finish at the depot he started from?\",\"display_name\":\"Vehicle depot circularity\",\"type\":\"boolean\",\"value\":true}},\"vehicle_must_finish_at_start_depot\":true}},{\"driver_changeover_vehicle\":{\"max_changeovers\":1,\"name\":\"Driver Changeover - default\",\"only_during_split\":false,\"parameters\":{\"max_changeovers\":{\"default_value\":1,\"description\":\"Please indicate how many changeovers are allowed in one duty\",\"display_name\":\"Max changeovers count\",\"type\":\"number\"},\"only_during_split\":{\"description\":\"Please indicate if a change can happen only during splits\",\"display_name\":\"Only during split\",\"type\":\"boolean\",\"value\":false},\"penalty\":{\"description\":\"Please indicate your preference for allowing changeovers (high penalty => less changeovers)\",\"display_name\":\"Penalty\",\"type\":\"number\",\"value\":50}},\"penalty\":50}},{\"driver_split_duty_preference\":{\"distance_threshold_between_start_end_stops\":3,\"full_penalty_split_piece_length_threshold\":\"02:00\",\"max_split_count_per_duty\":1,\"min_split_piece_length\":\"02:50\",\"min_split_piece_length_penalty\":100,\"min_split_time_length\":\"01:30\",\"name\":\"Driver Split - default\",\"no_penalty_split_piece_length_threshold\":\"02:50\",\"parameters\":{\"min_split_time_length\":{\"description\":\"What the minimal break length from which a break is considered a split break?\",\"display_name\":\"Split break minimal length\",\"type\":\"time\",\"value\":\"01:30\"},\"split_time_compensation\":{\"description\":\"What is the split break compensation in hours?\",\"display_name\":\"Split break compensation\",\"type\":\"time\",\"value\":\"01:00\"}},\"split_time_compensation\":\"01:00\"}},{\"driver_signing\":{\"name\":\"Driver sign on - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_on_time\":{\"description\":\"Please indicate how sign on time does a driver get per duty\",\"display_name\":\"Sign on time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_on_time\":\"00:10\"}},{\"driver_signing\":{\"name\":\"Driver sign off - default\",\"on_split\":false,\"parameters\":{\"on_split\":{\"display_name\":\"During split?\",\"type\":\"boolean\",\"value\":false},\"required_sign_off_time\":{\"description\":\"Please indicate how sign off time does a driver get per duty\",\"display_name\":\"Sign off time\",\"type\":\"time\",\"value\":\"00:10\"}},\"required_sign_off_time\":\"00:10\"}},{\"reposition_duty_start_end_tasks_for_breaks\":{\"minimum_end_task_duration\":120,\"minimum_start_task_duration\":120,\"name\":\"Reposition Duty Start End Tasks For Breaks - default\",\"parameters\":{\"minimum_end_task_duration\":{\"description\":\"Please indicate the minimal depot pull out time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull out\",\"type\":\"number\",\"value\":120},\"minimum_start_task_duration\":{\"description\":\"Please indicate the minimal depot pull in time for allowing reposition for breaks\",\"display_name\":\"Minimal depot pull in time\",\"type\":\"number\",\"value\":120}}}},{\"split_shift\":{\"minimal_break_length\":\"02:00\",\"must_split_when_possible\":true,\"name\":\"Mid day park - default\",\"parameters\":{\"minimal_break_length\":{\"description\":\"Please state how long can a vehicle be on a unattended before he has to go to a day depot\",\"display_name\":\"Unattended period allowed\",\"type\":\"time\",\"value\":\"02:00\"},\"requires_parking_depot\":{\"description\":\"Does a vehicle remain unattended?\",\"display_name\":\"Unattended vehicle\",\"type\":\"boolean\",\"value\":true}},\"requires_parking_depot\":true,\"split_cost\":50}},{\"duty_terminal_stops\":{\"duty_split_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"duty_terminal_locations\":{\"add_taxi_if_needed\":true,\"circular_depots\":true,\"penalty_factor\":1},\"parameters\":{\"add_taxi_if_needed_split\":{\"description\":\"Please indicate if the driver can return from get to a split using a relief vehicle\",\"display_name\":\"Use relief vehicle for split\",\"type\":\"boolean\",\"value\":true},\"add_taxi_if_needed_terminal\":{\"description\":\"Please indicate if the driver can start finish his duty using a relief vehicle\",\"display_name\":\"Use relief vehicle for duty\",\"type\":\"boolean\",\"value\":true}},\"taxi_minimal_cost\":\"0:15\",\"version\":2}},{\"implicit_places\":{}},{\"depots\":[{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"120\",\"stop_id\":\"120\"},{\"capabilities\":[\"end_of_day_parking\",\"mid_day_parking\"],\"capacity\":{\"total\":200},\"id\":\"121\",\"stop_id\":\"121\"}]},{\"vehicle_types\":{\"groups\":[[\"Urban\"]]}}]},\"request_parameters\":{\"schedule_parameters\":{\"day\":4,\"allow_unscheduled_duties\":true,\"create_duties\":true,\"create_vehicle_blocks\":true},\"assign_vehicles_parameters\":{\"regenerate_duty_ids\":\"Mismatch\"}},\"customer\":\"acme\",\"max_unscheduled_duty_id_counter\":null,\"max_unscheduled_vehicle_block_id_counter\":null}",
+                    "contentType": "text/plain; charset=utf-8"
+                }
+            },
+            "httpResponse": {
+                "statusCode": 200,
+                "reasonPhrase": "OK",
+                "headers": {
+                    "Server": ["nginx"],
+                    "Date": ["Wed, 28 Nov 2018 14:01:12 GMT"],
+                    "Content-Type": ["application/json"],
+                    "Content-Length": ["19"],
+                    "connection": ["close"]
+                },
+                "body": "{\"cache_hit\": true}"
+            },
+            "times": {
+                "remainingTimes": 1
+            }
+        }]
+    }
+}

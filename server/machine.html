@@ -25,10 +25,16 @@
             <li>
                 <ul><button type="button" onclick="get('restart')">restart</button></ul>
                 <ul><button type="button" onclick="get('stop')">stop</button></ul>
-                <ul><button type="button" onclick="get('resetRecording/lior',)">resetRecording</button></ul>
+                <ul>
+                    <input value="lior"/>
+                    <button type="button" onclick="get('resetRecording/'+this.previousElementSibling.value)">resetRecording</button>
+                </ul>
                 <ul><button type="button" onclick="get('save')">save</button></ul>
                 <ul><button type="button" onclick="get('getCurrentRecording')">getCurrentRecording</button></ul>
-                <ul><button type="button" onclick="get('startMocking')">startMocking</button></ul>
+                <ul>
+                    <input value="lior"/>
+                    <button type="button" onclick="get('startMocking/'+this.previousElementSibling.value)">startMocking</button>
+                </ul>
                 <ul><button type="button" onclick="get('log')">log</button></ul>
                 </ul>
             </li>
@@ -40,10 +46,11 @@
     </div>
 </body>
 <script>
+    //get('resetRecording/lior',)
     let output = document.getElementById('output');
     let waitmsg = document.getElementById('waitmsg');
     let links = document.getElementById('links');
-    renderjson.set_show_to_level(1);
+    renderjson.set_show_to_level(2);
     function get(path) {
         waitmsg.style.display = "";
         links.style.display = "none";

@@ -30,9 +30,10 @@ module.exports = {
     }),
     getRecords: successHelper(mockServer.getCurrentRecording.bind(mockServer)),
     startMocking: successHelper(async (req, res) => {
-        const recordName = mockServer.recordName;
+        const recordName = req.params.name;
         const record = await store.getRecord();
-        await mockServer.startMockState(record[mockServer.recordName]);
+        if (!record[recordName]) throw new Error(`No record named '${recordName}`)
+        return await mockServer.startMockState(record[recordName]);
     }),
     getLogs: successHelper(mockServer.getLogs.bind(mockServer)),
 }

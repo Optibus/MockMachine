@@ -3,6 +3,10 @@ const mockServerClient = require('mockserver-client').mockServerClient;
 const config = require('../../util/config');
 const _ = require('lodash');
 const axios = require("axios");
+const fetch = require('node-fetch');
+const { URLSearchParams } = require('url');
+const { detailedDiff } = require('deep-object-diff');
+
 
 
 class MockServer {
@@ -64,9 +68,24 @@ class MockServer {
 
     _stripRecord(record) {
         const { MithraMockRecordedExpectations : mithraRec, EuclidMockRecordedExpectations: euclidRec } = record;
-        const filter = [...['method','path','queryStringParameters',].map(s => `httpRequest.${s}`),"httpResponse"]
-        const stripRec = recList => recList.map(rec => _.pick(rec, filter));
-        {mithraRec: stripRec(mithraRec), euclidRec: stripRec(euclidRec)}
+        const filter = [...['method','path','queryStringParameters',].map(s => `httpRequest.${s}`),
+                        ...['customer','authorization','X-Optibus-Customer','X-Optibus-User','X-Optibus-OperationType']
+                            .map(s => `httpRequest.headers.${s}`),
+                        "httpResponse"];
+        const convertArrToStrInMapValues = map =>
+            Object.keys(map).forEach(k => map[k] = map[k][0]);
+        const lowercase = map => 
+            Object.keys(map).reduce((newMap, key) => (newMap[key.toLocaleLowerCase()] = map[key], newMap), {})
+        const stripRec = recList => recList.map(rec => {
+            let tmpRec = _.pick(rec, filter);
+            tmpRec.httpRequest.headers = lowercase(tmpRec.httpRequest.headers);
+            tmpRec.httpResponse.headers = lowercase(tmpRec.httpResponse.headers);
+            convertArrToStrInMapValues(tmpRec.httpRequest.headers);
+            convertArrToStrInMapValues(tmpRec.httpResponse.headers);
+            tmpRec.httpRequest.queryStringParameters && convertArrToStrInMapValues(tmpRec.httpRequest.queryStringParameters);
+            return tmpRec;
+        });
+        return {mithraRec: stripRec(mithraRec), euclidRec: stripRec(euclidRec)};
     }
 
     async startMockState(record) {
@@ -78,7 +97,7 @@ class MockServer {
                 trace: true
             })
         ));
-        const { mithraRec, euclidRec } = _stripRecord(record);
+        const { mithraRec, euclidRec } = this._stripRecord(record);
         // mockServerClient("localhost", 1081).mockAnyResponse(stripRec(mithraRec)).then(
         //     function () {
         //         console.log("expectation created");
@@ -87,9 +106,60 @@ class MockServer {
         //         console.log(error);
         //     }
         // );
-        await mockServerClient("localhost", 1082).mockAnyResponse(stripRec(euclidRec));
+        await mockServerClient("localhost", 1082).mockAnyResponse(_.omit(euclidRec[0], ["httpRequest.headers"])).then(
+                function () {
+                    console.log("expectation created");
+                },
+                function (error) {
+                    console.log(error);
+                }
+        );
         console.log("Euclid mock started, going to run test");
+        
+        let ans = [];
+        for(let i in mithraRec) {
+        //return mithraRec.map(async ({httpRequest: httpRec}) => {
+            const { httpRequest, httpResponse } = mithraRec[i];
+            try {
+                const { method, path, queryStringParameters: params, headers} = httpRequest;
+                /*let res = await fetch(`http://localhost:3000${path}?${new URLSearchParams(params)}`,{
+                    method,
+                    headers: {
+                        'authorization': 'testtoken',
+                        'customer': headers.customer
+                    }
+                })*/
+                let res = await axios({
+                    method, params,
+                    baseURL: 'http://localhost:3000',
+                    url: path,
+                    headers: {
+                        'authorization': 'testtoken',
+                        'customer': headers.customer
+                    }
+                });
+                const newHttpResponse = this. _requestToJSON(res);
+                ans.push({ detailedDiff: detailedDiff(httpResponse, newHttpResponse), newHttpResponse, expected: httpResponse, httpRequest });
+            } catch (err) {
+                console.log("Error on tring to fetch: " + err.message);
+                let parsedErr = {
+                    message: err.message,
+                    stack: err.stack,
+                }
+                const newHttpResponse = this. _requestToJSON(err.response);
+                ans.push({ Error: parsedErr, expected: httpResponse, newHttpResponse ,httpRequest });
+            }
+        }
+        return ans;
+    }
 
+    _requestToJSON(request) {
+        return {
+            statusCode: request.status,
+            reasonPhrase: request.statusText,
+            headers: Object.assign({}, request.headers),
+            body: JSON.stringify(request.data)
+        }
     }
 
 }

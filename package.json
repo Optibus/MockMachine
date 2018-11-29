@@ -13,11 +13,13 @@
   "dependencies": {
     "@awaitjs/express": "^0.1.4",
     "axios": "^0.18.0",
+    "deep-object-diff": "^1.1.0",
     "express": "^4.16.4",
     "http-proxy-middleware": "^0.19.1",
     "lodash": "^4.17.11",
     "mockserver-client": "^5.5.0",
-    "mockserver-node": "^5.5.0"
+    "mockserver-node": "^5.5.0",
+    "node-fetch": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^5.9.0",

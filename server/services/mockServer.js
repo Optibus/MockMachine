@@ -107,7 +107,7 @@ class MockServer {
         //     }
         // );
         await mockServerClient("localhost", 1082).mockAnyResponse(_.omit(euclidRec[0], ["httpRequest.headers"])).then(
-                function () {
+                function () { 
                     console.log("expectation created");
                 },
                 function (error) {
@@ -139,7 +139,12 @@ class MockServer {
                     }
                 });
                 const newHttpResponse = this. _requestToJSON(res);
-                ans.push({ detailedDiff: detailedDiff(httpResponse, newHttpResponse), newHttpResponse, expected: httpResponse, httpRequest });
+                ans.push({ 
+                    detailedDiff: detailedDiff(httpResponse, newHttpResponse), 
+                    detailedBodyDiff: detailedDiff(JSON.parse(httpResponse.body), JSON.parse(newHttpResponse.body)), 
+                    newHttpResponse, 
+                    expected: httpResponse, 
+                    httpRequest });
             } catch (err) {
                 console.log("Error on tring to fetch: " + err.message);
                 let parsedErr = {

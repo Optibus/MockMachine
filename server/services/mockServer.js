@@ -118,17 +118,9 @@ class MockServer {
         
         let ans = [];
         for(let i in mithraRec) {
-        //return mithraRec.map(async ({httpRequest: httpRec}) => {
             const { httpRequest, httpResponse } = mithraRec[i];
             try {
                 const { method, path, queryStringParameters: params, headers} = httpRequest;
-                /*let res = await fetch(`http://localhost:3000${path}?${new URLSearchParams(params)}`,{
-                    method,
-                    headers: {
-                        'authorization': 'testtoken',
-                        'customer': headers.customer
-                    }
-                })*/
                 let res = await axios({
                     method, params,
                     baseURL: 'http://localhost:3000',

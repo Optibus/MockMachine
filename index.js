@@ -1,6 +1,6 @@
 const express = require('express');
 const setOnExitJob = require('./server/exit_server');
-const routerMockServer = require('./server/router')
+const routerMockServer = require('./server/router');
 
 const app = express();
 const port = 3003;
@@ -19,7 +19,7 @@ setOnExitJob(() => server.close());
 const fs = require('fs')
 process.env.NODEMON && fs.readdir('./', (err, res) => res.filter(it => /.*\.log$/.exec(it)).forEach(file => fs.unlink(file, () => {console.log('rm')})));
 
-
+ 
 // var proxy = require('http-proxy-middleware');
 // const app2 = express();
 
